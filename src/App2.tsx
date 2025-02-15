@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
-import { Button } from "./components/ui/button";
 import {
-  ArrowDown,
-  ArrowRight,
-  CheckCircle,
   Mail,
   MapPin,
   Phone,
-  PhoneCall,
-  Redo,
-  UndoIcon,
+  PhoneCall
 } from "lucide-react";
-import { QuoteForm } from "./components/quote-form";
-import { Label } from "./components/ui/label";
-import { Input } from "./components/ui/input";
-import { Textarea } from "./components/ui/textarea";
+import { useEffect, useState } from "react";
+import { Button } from "./components/button";
+import { Input } from "./components/input";
+import { Textarea } from "./components/textarea";
 
 export const App2 = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -1895,12 +1887,11 @@ const VideoSection = () => {
 };
 
 import {
-  Shield,
-  Headphones,
-  Sliders,
   ArrowUpDown,
-  Zap,
-  User,
+  Headphones,
+  Shield,
+  Sliders,
+  Zap
 } from "lucide-react";
 
 function FeaturesSection() {
