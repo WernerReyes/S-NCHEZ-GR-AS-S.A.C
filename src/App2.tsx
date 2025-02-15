@@ -1,8 +1,14 @@
 import {
+  Handshake,
+  Leaf,
   Mail,
   MapPin,
   Phone,
-  PhoneCall
+  PhoneCall,
+  Repeat,
+  ShieldCheck,
+  Users,
+  UsersRound,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "./components/button";
@@ -625,825 +631,15 @@ export const App2 = () => {
       <FeaturesSection />
 
       {/* Projects Section */}
-      <section className="bg-tg-bg py-20 dark:bg-dark lg:py-[120px]">
-  <div className="container mx-auto">
-    <div className="-mx-4 flex flex-wrap">
-      <div className="w-full px-4">
-        <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-[70px]">
-          <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
-            Trending Products
-          </h2>
-          <p className="text-base text-body-color dark:text-dark-6">
-            There are many variations of passages of Lorem Ipsum available but
-            the majority have suffered alteration in some form.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div className="rounded-[10px] border border-stroke dark:border-dark-3">
-      <div className="flex flex-wrap">
-        <div className="w-full border-b border-stroke px-6 dark:border-dark-3 md:w-1/2 md:border-r lg:w-1/3">
-          <div className="my-6">
-            <div className="mb-5 overflow-hidden rounded-md">
-              <img
-                src="src/assets/ecom-images/products/products-grids-05/image-01.jpg"
-                alt="product"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <span className="mb-[10px] block text-lg font-semibold text-dark dark:text-white">
-                $59.55
-              </span>
-              <h3>
-                <a
-                  href="javascript:void(0)"
-                  className="mb-2 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl md:text-lg 2xl:text-2xl"
-                >
-                  Table Top Showpiece
-                </a>
-              </h3>
-              <p className="flex items-center text-base text-body-color dark:text-dark-6">
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-[10px]">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_525)">
-                      <path
-                        d="M4.02502 15.55C3.80002 15.55 3.57502 15.475 3.40002 15.35C3.05002 15.1 2.85002 14.65 2.92502 14.225L3.57502 10.2L0.77502 7.32501C0.47502 7.02501 0.37502 6.57501 0.50002 6.15001C0.62502 5.75001 0.97502 5.45001 1.37502 5.40001L5.25002 4.77501L7.00002 1.10001C7.20002 0.700012 7.57502 0.450012 8.00002 0.450012C8.42502 0.450012 8.82502 0.700012 9.00002 1.10001L10.75 4.75001L14.6 5.35001C15 5.42501 15.35 5.70001 15.475 6.10001C15.625 6.52501 15.5 6.97501 15.2 7.27501L12.425 10.175L13.075 14.225C13.15 14.675 12.975 15.1 12.6 15.35C12.25 15.6 11.825 15.625 11.45 15.425L8.00002 13.55L4.55002 15.425C4.40002 15.525 4.20002 15.55 4.02502 15.55ZM1.57502 6.50001C1.57502 6.50001 1.57502 6.52501 1.57502 6.55001L4.50002 9.55001C4.67502 9.72501 4.75002 10 4.72502 10.25L4.05002 14.425C4.05002 14.425 4.05002 14.425 4.05002 14.45L7.65002 12.5C7.87502 12.375 8.15002 12.375 8.40002 12.5L12 14.45C12 14.45 12 14.45 12 14.425L11.325 10.225C11.275 9.97501 11.375 9.72501 11.55 9.52501L14.475 6.52501C14.5 6.50001 14.475 6.47501 14.475 6.47501L10.45 5.85001C10.2 5.80001 9.97502 5.65001 9.87502 5.40001L8.00002 1.60001L6.20002 5.42501C6.10002 5.65001 5.87502 5.82501 5.62502 5.87501L1.57502 6.50001Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_525">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span> 115 Reviews</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-full border-b border-stroke px-6 dark:border-dark-3 md:w-1/2 lg:w-1/3 lg:border-r">
-          <div className="my-6">
-            <div className="mb-5 overflow-hidden rounded-md">
-              <img
-                src="src/assets/ecom-images/products/products-grids-05/image-02.jpg"
-                alt="product"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <span className="mb-[10px] block text-lg font-semibold text-dark dark:text-white">
-                $40.00
-              </span>
-              <h3>
-                <a
-                  href="javascript:void(0)"
-                  className="mb-2 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl md:text-lg 2xl:text-2xl"
-                >
-                  Ceramic Coffee Mug
-                </a>
-              </h3>
-              <p className="flex items-center text-base text-body-color dark:text-dark-6">
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-[10px]">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_525)">
-                      <path
-                        d="M4.02502 15.55C3.80002 15.55 3.57502 15.475 3.40002 15.35C3.05002 15.1 2.85002 14.65 2.92502 14.225L3.57502 10.2L0.77502 7.32501C0.47502 7.02501 0.37502 6.57501 0.50002 6.15001C0.62502 5.75001 0.97502 5.45001 1.37502 5.40001L5.25002 4.77501L7.00002 1.10001C7.20002 0.700012 7.57502 0.450012 8.00002 0.450012C8.42502 0.450012 8.82502 0.700012 9.00002 1.10001L10.75 4.75001L14.6 5.35001C15 5.42501 15.35 5.70001 15.475 6.10001C15.625 6.52501 15.5 6.97501 15.2 7.27501L12.425 10.175L13.075 14.225C13.15 14.675 12.975 15.1 12.6 15.35C12.25 15.6 11.825 15.625 11.45 15.425L8.00002 13.55L4.55002 15.425C4.40002 15.525 4.20002 15.55 4.02502 15.55ZM1.57502 6.50001C1.57502 6.50001 1.57502 6.52501 1.57502 6.55001L4.50002 9.55001C4.67502 9.72501 4.75002 10 4.72502 10.25L4.05002 14.425C4.05002 14.425 4.05002 14.425 4.05002 14.45L7.65002 12.5C7.87502 12.375 8.15002 12.375 8.40002 12.5L12 14.45C12 14.45 12 14.45 12 14.425L11.325 10.225C11.275 9.97501 11.375 9.72501 11.55 9.52501L14.475 6.52501C14.5 6.50001 14.475 6.47501 14.475 6.47501L10.45 5.85001C10.2 5.80001 9.97502 5.65001 9.87502 5.40001L8.00002 1.60001L6.20002 5.42501C6.10002 5.65001 5.87502 5.82501 5.62502 5.87501L1.57502 6.50001Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_525">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span> 55 Reviews</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-full border-b border-stroke px-6 dark:border-dark-3 md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0">
-          <div className="my-6">
-            <div className="mb-5 overflow-hidden rounded-md">
-              <img
-                src="src/assets/ecom-images/products/products-grids-05/image-03.jpg"
-                alt="product"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <span className="mb-[10px] block text-lg font-semibold text-dark dark:text-white">
-                $80.00
-              </span>
-              <h3>
-                <a
-                  href="javascript:void(0)"
-                  className="mb-2 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl md:text-lg 2xl:text-2xl"
-                >
-                  Modern Coffee Mug
-                </a>
-              </h3>
-              <p className="flex items-center text-base text-body-color dark:text-dark-6">
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-[10px]">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_525)">
-                      <path
-                        d="M4.02502 15.55C3.80002 15.55 3.57502 15.475 3.40002 15.35C3.05002 15.1 2.85002 14.65 2.92502 14.225L3.57502 10.2L0.77502 7.32501C0.47502 7.02501 0.37502 6.57501 0.50002 6.15001C0.62502 5.75001 0.97502 5.45001 1.37502 5.40001L5.25002 4.77501L7.00002 1.10001C7.20002 0.700012 7.57502 0.450012 8.00002 0.450012C8.42502 0.450012 8.82502 0.700012 9.00002 1.10001L10.75 4.75001L14.6 5.35001C15 5.42501 15.35 5.70001 15.475 6.10001C15.625 6.52501 15.5 6.97501 15.2 7.27501L12.425 10.175L13.075 14.225C13.15 14.675 12.975 15.1 12.6 15.35C12.25 15.6 11.825 15.625 11.45 15.425L8.00002 13.55L4.55002 15.425C4.40002 15.525 4.20002 15.55 4.02502 15.55ZM1.57502 6.50001C1.57502 6.50001 1.57502 6.52501 1.57502 6.55001L4.50002 9.55001C4.67502 9.72501 4.75002 10 4.72502 10.25L4.05002 14.425C4.05002 14.425 4.05002 14.425 4.05002 14.45L7.65002 12.5C7.87502 12.375 8.15002 12.375 8.40002 12.5L12 14.45C12 14.45 12 14.45 12 14.425L11.325 10.225C11.275 9.97501 11.375 9.72501 11.55 9.52501L14.475 6.52501C14.5 6.50001 14.475 6.47501 14.475 6.47501L10.45 5.85001C10.2 5.80001 9.97502 5.65001 9.87502 5.40001L8.00002 1.60001L6.20002 5.42501C6.10002 5.65001 5.87502 5.82501 5.62502 5.87501L1.57502 6.50001Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_525">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span> 8 Reviews</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-full border-b border-stroke px-6 dark:border-dark-3 md:w-1/2 lg:w-1/3 lg:border-b-0 lg:border-r">
-          <div className="my-6">
-            <div className="mb-5 overflow-hidden rounded-md">
-              <img
-                src="src/assets/ecom-images/products/products-grids-05/image-04.jpg"
-                alt="product"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <span className="mb-[10px] block text-lg font-semibold text-dark dark:text-white">
-                $49.55
-              </span>
-              <h3>
-                <a
-                  href="javascript:void(0)"
-                  className="mb-2 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl md:text-lg 2xl:text-2xl"
-                >
-                  Metal Table Lamp
-                </a>
-              </h3>
-              <p className="flex items-center text-base text-body-color dark:text-dark-6">
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-[10px]">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_525)">
-                      <path
-                        d="M4.02502 15.55C3.80002 15.55 3.57502 15.475 3.40002 15.35C3.05002 15.1 2.85002 14.65 2.92502 14.225L3.57502 10.2L0.77502 7.32501C0.47502 7.02501 0.37502 6.57501 0.50002 6.15001C0.62502 5.75001 0.97502 5.45001 1.37502 5.40001L5.25002 4.77501L7.00002 1.10001C7.20002 0.700012 7.57502 0.450012 8.00002 0.450012C8.42502 0.450012 8.82502 0.700012 9.00002 1.10001L10.75 4.75001L14.6 5.35001C15 5.42501 15.35 5.70001 15.475 6.10001C15.625 6.52501 15.5 6.97501 15.2 7.27501L12.425 10.175L13.075 14.225C13.15 14.675 12.975 15.1 12.6 15.35C12.25 15.6 11.825 15.625 11.45 15.425L8.00002 13.55L4.55002 15.425C4.40002 15.525 4.20002 15.55 4.02502 15.55ZM1.57502 6.50001C1.57502 6.50001 1.57502 6.52501 1.57502 6.55001L4.50002 9.55001C4.67502 9.72501 4.75002 10 4.72502 10.25L4.05002 14.425C4.05002 14.425 4.05002 14.425 4.05002 14.45L7.65002 12.5C7.87502 12.375 8.15002 12.375 8.40002 12.5L12 14.45C12 14.45 12 14.45 12 14.425L11.325 10.225C11.275 9.97501 11.375 9.72501 11.55 9.52501L14.475 6.52501C14.5 6.50001 14.475 6.47501 14.475 6.47501L10.45 5.85001C10.2 5.80001 9.97502 5.65001 9.87502 5.40001L8.00002 1.60001L6.20002 5.42501C6.10002 5.65001 5.87502 5.82501 5.62502 5.87501L1.57502 6.50001Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_525">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span> 49 Reviews</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-full border-b border-stroke px-6 dark:border-dark-3 md:w-1/2 md:border-b-0 md:border-r lg:w-1/3">
-          <div className="my-6">
-            <div className="mb-5 overflow-hidden rounded-md">
-              <img
-                src="src/assets/ecom-images/products/products-grids-05/image-05.jpg"
-                alt="product"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <span className="mb-[10px] block text-lg font-semibold text-dark dark:text-white">
-                $25.55
-              </span>
-              <h3>
-                <a
-                  href="javascript:void(0)"
-                  className="mb-2 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl md:text-lg 2xl:text-2xl"
-                >
-                  Rubik's Cube
-                </a>
-              </h3>
-              <p className="flex items-center text-base text-body-color dark:text-dark-6">
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-[10px]">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span> 35 Reviews</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-full border-stroke px-6 dark:border-dark-3 md:w-1/2 lg:w-1/3">
-          <div className="my-6">
-            <div className="mb-5 overflow-hidden rounded-md">
-              <img
-                src="src/assets/ecom-images/products/products-grids-05/image-06.jpg"
-                alt="product"
-                className="w-full"
-              />
-            </div>
-            <div>
-              <span className="mb-[10px] block text-lg font-semibold text-dark dark:text-white">
-                $85.55
-              </span>
-              <h3>
-                <a
-                  href="javascript:void(0)"
-                  className="mb-2 block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl md:text-lg 2xl:text-2xl"
-                >
-                  Table Showpiece
-                </a>
-              </h3>
-              <p className="flex items-center text-base text-body-color dark:text-dark-6">
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-1">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_519)">
-                      <path
-                        d="M14.925 5.975L10.4 5.275L8.34996 0.975C8.19996 0.675 7.79996 0.675 7.64996 0.975L5.59996 5.3L1.09996 5.975C0.77496 6.025 0.64996 6.45 0.89996 6.675L4.17496 10.05L3.39996 14.775C3.34996 15.1 3.67496 15.375 3.97496 15.175L8.04996 12.95L12.1 15.175C12.375 15.325 12.725 15.075 12.65 14.775L11.875 10.05L15.15 6.675C15.35 6.45 15.25 6.025 14.925 5.975Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_519">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span className="pr-[10px]">
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clipPath="url(#clip0_1833_525)">
-                      <path
-                        d="M4.02502 15.55C3.80002 15.55 3.57502 15.475 3.40002 15.35C3.05002 15.1 2.85002 14.65 2.92502 14.225L3.57502 10.2L0.77502 7.32501C0.47502 7.02501 0.37502 6.57501 0.50002 6.15001C0.62502 5.75001 0.97502 5.45001 1.37502 5.40001L5.25002 4.77501L7.00002 1.10001C7.20002 0.700012 7.57502 0.450012 8.00002 0.450012C8.42502 0.450012 8.82502 0.700012 9.00002 1.10001L10.75 4.75001L14.6 5.35001C15 5.42501 15.35 5.70001 15.475 6.10001C15.625 6.52501 15.5 6.97501 15.2 7.27501L12.425 10.175L13.075 14.225C13.15 14.675 12.975 15.1 12.6 15.35C12.25 15.6 11.825 15.625 11.45 15.425L8.00002 13.55L4.55002 15.425C4.40002 15.525 4.20002 15.55 4.02502 15.55ZM1.57502 6.50001C1.57502 6.50001 1.57502 6.52501 1.57502 6.55001L4.50002 9.55001C4.67502 9.72501 4.75002 10 4.72502 10.25L4.05002 14.425C4.05002 14.425 4.05002 14.425 4.05002 14.45L7.65002 12.5C7.87502 12.375 8.15002 12.375 8.40002 12.5L12 14.45C12 14.45 12 14.45 12 14.425L11.325 10.225C11.275 9.97501 11.375 9.72501 11.55 9.52501L14.475 6.52501C14.5 6.50001 14.475 6.47501 14.475 6.47501L10.45 5.85001C10.2 5.80001 9.97502 5.65001 9.87502 5.40001L8.00002 1.60001L6.20002 5.42501C6.10002 5.65001 5.87502 5.82501 5.62502 5.87501L1.57502 6.50001Z"
-                        fill="#FFA645"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1833_525">
-                        <rect width={16} height={16} fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <span> 97 Reviews</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      <ProjectsSection />
 
+      {/* Testimonials Section */}
     </div>
   );
 };
 
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const CurvedArrow = () => {
   return (
@@ -1886,47 +1082,38 @@ const VideoSection = () => {
   );
 };
 
-import {
-  ArrowUpDown,
-  Headphones,
-  Shield,
-  Sliders,
-  Zap
-} from "lucide-react";
-
 function FeaturesSection() {
   const features = [
     {
-      icon: Shield,
-      title: "Secure",
+      icon: Repeat,
+      title: "Adaptabilidad",
       description:
-        "We strictly only deal with vendors that provide top notch security.",
+        "Continuamente buscamos mejorar el negocio y nosotros mismos para ser los mejores.",
     },
     {
-      icon: Headphones,
-      title: "24/7 Support",
+      icon: Users,
+      title: "Orientado al cliente",
       description:
-        "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.",
+        "Nos enfocamos en ayudar a nuestros clientes alcanzar sus objetivos.",
     },
     {
-      icon: Sliders,
-      title: "Customizable",
+      icon: Leaf,
+      title: "Sustentabilidad",
       description:
-        "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.",
+        "Nuestras acciones social-ambientalmente responsables de hoy son pensadas en el mundo que queremos mañana",
     },
     {
-      icon: ArrowUpDown,
-      title: "Reliable",
+      icon: ShieldCheck,
+      title: "Integridad",
       description:
-        "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.",
+        "Compromiso para hacer lo correcto. ¨ Digo lo que pienso y hago lo que digo¨",
     },
     {
-      icon: Zap,
-      title: "Fast",
+      icon: Handshake,
+      title: "Colaboradores comprometidos",
       description:
-        "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.",
+        "Reconocemos que la colaboración entre nuestra gente es un factor clave para nuestro éxito.",
     },
-    
   ];
 
   return (
@@ -1962,3 +1149,75 @@ function FeaturesSection() {
     </section>
   );
 }
+
+const ProjectsSection = () => {
+  const projects = [
+    {
+      title: "Construcción",
+      image: "https://www.tgruasanchez.com/images/team/tren-electrico.jpg",
+    },
+    {
+      title: "Minero",
+      image: "https://www.tgruasanchez.com/images/team/mina.jpg",
+    },
+    {
+      title: "Eléctrico",
+      image: "https://www.tgruasanchez.com/images/team/postes.jpg",
+    },
+  ];
+  return (
+    <section className="overflow-hidden bg-tg-bg dark:bg-dark-2 pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full px-4">
+            <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+              <span className="block mb-2 text-lg font-semibold text-tertiary">
+                Nuestros Proyectos
+              </span>
+              <h2 className="text-dark dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+                Proyectos
+              </h2>
+              <p className="text-base text-body-color dark:text-dark-6">
+                En Transportes Sánchez Grúas S.A.C. nos especializamos en
+                alquiler de camiones grúas, siendo uno de las empresas más
+                reconocidas a nivel nacional. A continuación, lo invitamos a ver
+                la galería de nuestros recientes proyectos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap justify-center -mx-4">
+          <div className="w-full px-4 ">
+            <div className="relative grid p-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10  flex-wrap rounded-[10px] bg-white dark:bg-dark shadow-team">
+            {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group overflow-hidden rounded-xl bg-white dark:bg-dark shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+            >
+              <div className="relative">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-64 object-cover rounded-t-xl group-hover:opacity-75 transition"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h4 className="text-lg font-semibold text-dark dark:text-white border-t-2 border-tertiary pt-4">
+                  {project.title}
+                </h4>
+                <Link
+                  to="/proyectos"
+                  className="inline-block mt-4 bg-tertiary text-white font-medium py-2 px-5 rounded-md shadow-md transition-all hover:bg-transparent hover:text-tertiary hover:border hover:border-tertiary"
+                >
+                  Ver Proyecto
+                </Link>
+              </div>
+            </div>
+          ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
