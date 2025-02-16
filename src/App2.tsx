@@ -7,6 +7,7 @@ import {
   PhoneCall,
   Repeat,
   ShieldCheck,
+  Smartphone,
   Users,
   UsersRound,
 } from "lucide-react";
@@ -646,6 +647,7 @@ export const App2 = () => {
       <ContactSection />
 
       {/* Footer */}
+      <Footer />
     </div>
   );
 };
@@ -1786,7 +1788,7 @@ const FAQSection = () => {
 
 const ContactSection = () => {
   return (
-    <section className="relative z-10 overflow-hidden bg-white dark:bg-dark py-20 lg:py-[px]">
+    <section className="relative z-10 overflow-hidden bg-white dark:bg-dark pt-20">
       <div className="container mx-auto">
         <div className="flex flex-wrap -mx-4 lg:justify-between">
           <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -1795,7 +1797,7 @@ const ContactSection = () => {
                 Contacto
               </span>
               <h2 className="text-dark dark:text-white mb-6 text-[32px] font-bold sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-              ¿Necesitas ayuda con tu proyecto?
+                ¿Necesitas ayuda con tu proyecto?
               </h2>
               <p className="text-base leading-relaxed text-body-color dark:text-dark-6 mb-9">
                 Si tienes alguna pregunta o deseas solicitar un presupuesto, no
@@ -1824,7 +1826,6 @@ const ContactSection = () => {
                     Av. Las Torres Sub Lt 7-C S/N Zona Norte de la Baja de Lima,
                     Lurigancho – Huachipa
                   </p>
-                  
                 </div>
               </div>
               <div className="mb-8 flex w-full max-w-[370px]">
@@ -1886,18 +1887,18 @@ const ContactSection = () => {
                     Correos
                   </h4>
                   <p className="text-base text-body-color dark:text-dark-6">
-                  doris.s@tgruasanchez.com
+                    doris.s@tgruasanchez.com
                   </p>
                   <p className="text-base text-body-color dark:text-dark-6">
-                  administracion@tgruasanchez.com
+                    administracion@tgruasanchez.com
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-            <div className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
-              <form>
+          <div className="w-full px-4 lg:w-1/2 mt-auto xl:w-5/12">
+            <div className="relative">
+              <form className="p-8 relative top-28 z-20 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12">
                 <div className="mb-6">
                   <input
                     type="text"
@@ -1937,7 +1938,7 @@ const ContactSection = () => {
                 </div>
               </form>
               <div>
-                <span className="absolute -top-10 -right-9 z-[-1]">
+                <span className="absolute top-10 -right-9 z-[-1]">
                   <svg
                     width={100}
                     height={100}
@@ -1953,7 +1954,7 @@ const ContactSection = () => {
                     />
                   </svg>
                 </span>
-                <span className="absolute -right-10 top-[90px] z-[-1]">
+                <span className="absolute -right-10 top-[160px] z-[-1]">
                   <svg
                     width={34}
                     height={134}
@@ -2748,6 +2749,240 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
+      <Map />
     </section>
+  );
+};
+
+const Map = () => {
+  return (
+    <section className="relative w-full h-[400px]">
+      <iframe
+        className="w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.007440403266!2d-77.03287808518795!3d-12.085860191443467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8a1e0c7c9d7%3A0x3c7f4f7f1e1e7b7f!2sT%20Gruas%20Sanchez!5e0!3m2!1ses!2spe!4v1631054832569!5m2!1ses!2spe"
+        allowFullScreen
+        loading="lazy"
+      />
+    </section>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="relative z-10 bg-primary">
+      <div className="container pt-14 lg:pt-20">
+        <div className="flex flex-wrap -mx-4">
+          <div className="w-full px-4 sm:w-2/3 lg:w-4/12 2xl:w-3/12">
+            <div className="w-full mb-10">
+              <a
+                href="javascript:void(0)"
+                className="mb-6 inline-block max-w-[160px]"
+              >
+                <img
+                  src="https://www.tgruasanchez.com/images/logo.png"
+                  alt="logo"
+                  className="max-w-full"
+                />
+              </a>
+              <p className="text-base mb-7 text-white/70">
+                Nuestros equipo de personal calificado y comprometido a realizar
+                un servicio eficiente y seguro.
+              </p>
+              <div className="flex items-center -mx-3">
+                <a
+                  href="javascript:void(0)"
+                  className="px-3 text-gray-7 text-white hover:text-secondary"
+                >
+                  <svg
+                    width={10}
+                    height={18}
+                    viewBox="0 0 10 18"
+                    className="fill-current"
+                  >
+                    <path d="M9.00007 6.82105H7.50006H6.96434V6.27097V4.56571V4.01562H7.50006H8.62507C8.91971 4.01562 9.16078 3.79559 9.16078 3.46554V0.550085C9.16078 0.247538 8.9465 0 8.62507 0H6.66969C4.55361 0 3.08038 1.54024 3.08038 3.82309V6.21596V6.76605H2.54466H0.72322C0.348217 6.76605 0 7.06859 0 7.50866V9.48897C0 9.87402 0.294645 10.2316 0.72322 10.2316H2.49109H3.02681V10.7817V16.31C3.02681 16.6951 3.32145 17.0526 3.75003 17.0526H6.26791C6.42862 17.0526 6.56255 16.9701 6.66969 16.8601C6.77684 16.7501 6.8572 16.5576 6.8572 16.3925V10.8092V10.2591H7.4197H8.62507C8.97328 10.2591 9.24114 10.0391 9.29471 9.709V9.6815V9.65399L9.66972 7.7562C9.6965 7.56367 9.66972 7.34363 9.509 7.1236C9.45543 6.98608 9.21436 6.84856 9.00007 6.82105Z" />
+                  </svg>
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  className="px-3 text-gray-7 text-white hover:text-secondary"
+                >
+                  <svg
+                    width={19}
+                    height={15}
+                    viewBox="0 0 19 15"
+                    className="fill-current"
+                  >
+                    <path d="M16.2622 3.17878L17.33 1.93293C17.6391 1.59551 17.7234 1.33595 17.7515 1.20618C16.9085 1.67337 16.1217 1.82911 15.6159 1.82911H15.4192L15.3068 1.72528C14.6324 1.18022 13.7894 0.894714 12.8902 0.894714C10.9233 0.894714 9.37779 2.40012 9.37779 4.13913C9.37779 4.24295 9.37779 4.39868 9.40589 4.5025L9.49019 5.02161L8.90009 4.99565C5.30334 4.89183 2.35288 2.03675 1.87518 1.5436C1.08839 2.84136 1.53799 4.08722 2.01568 4.86587L2.97107 6.31937L1.45369 5.54071C1.48179 6.63084 1.93138 7.48736 2.80247 8.11029L3.56116 8.62939L2.80247 8.9149C3.28017 10.2386 4.34795 10.7837 5.13474 10.9913L6.17443 11.2509L5.19094 11.8738C3.61736 12.912 1.65039 12.8342 0.779297 12.7563C2.54957 13.8983 4.65705 14.1579 6.11823 14.1579C7.21412 14.1579 8.02901 14.0541 8.2257 13.9762C16.0936 12.2631 16.4589 5.77431 16.4589 4.47655V4.29486L16.6275 4.19104C17.5829 3.36047 17.9763 2.91923 18.2011 2.65967C18.1168 2.68563 18.0044 2.73754 17.892 2.7635L16.2622 3.17878Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="w-full px-4 md:w-1/2 lg:w-4/12 2xl:w-3/12">
+            <div className="w-full mb-10">
+              <h4 className="text-lg font-semibold text-white mb-9">
+                No dudes en contactarnos
+              </h4>
+
+              <div className="mr-5 w-full overflow-hidden rounded">
+                <img
+                  src="https://www.tgruasanchez.com/info.jpg"
+                  alt="image"
+                  className="w-full"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="w-full px-4 sm:w-1/2 lg:w-3/12 2xl:w-3/12">
+            <div className="w-full mb-10">
+              <h4 className="text-lg font-semibold text-white mb-9">Legal</h4>
+              <ul className="space-y-3">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    className="inline-block text-base leading-loose text-white/70 hover:underline underline-offset-2 hover:text-secondary"
+                  >
+                    Términos y condiciones
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    className="inline-block text-base leading-loose text-white/70 hover:underline underline-offset-2 hover:text-secondary"
+                  >
+                    FAQ
+                  </a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+         
+          <div className="w-full px-4 sm:w-1/2 lg:w-4/12 2xl:w-3/12">
+            <div className="w-full mb-10">
+              <h4 className="text-lg font-semibold text-white mb-9">
+                Información de contacto
+              </h4>
+              <ul>
+                <li>
+                  <p className="inline-flex items-start mb-3 text-base leading-loose text-white/70">
+                    <span className="mr-3 mt-[10px]">
+                      <svg
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M17.5 3H2.5C1.4375 3 0.53125 3.875 0.53125 4.96875V15.0937C0.53125 16.1562 1.40625 17.0625 2.5 17.0625H17.5C18.5625 17.0625 19.4687 16.1875 19.4687 15.0937V4.9375C19.4687 3.875 18.5625 3 17.5 3ZM17.5 4.40625C17.5312 4.40625 17.5625 4.40625 17.5937 4.40625L10 9.28125L2.40625 4.40625C2.4375 4.40625 2.46875 4.40625 2.5 4.40625H17.5ZM17.5 15.5938H2.5C2.1875 15.5938 1.9375 15.3438 1.9375 15.0312V5.78125L9.25 10.4688C9.46875 10.625 9.71875 10.6875 9.96875 10.6875C10.2187 10.6875 10.4687 10.625 10.6875 10.4688L18 5.78125V15.0625C18.0625 15.375 17.8125 15.5938 17.5 15.5938Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    administracion@tgruasanchez.com
+                  </p>
+                </li>
+                <li>
+                  <p className="inline-flex items-start mb-3 text-base leading-loose text-white/70">
+                    <span className="mr-3 mt-[10px]">
+                      <svg
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clipPath="url(#clip0_941_16343)">
+                          <path
+                            d="M15.1875 19.4688C14.3437 19.4688 13.375 19.25 12.3125 18.8438C10.1875 18 7.84374 16.375 5.74999 14.2813C3.65624 12.1875 2.03124 9.84377 1.18749 7.68752C0.249989 5.37502 0.343739 3.46877 1.43749 2.40627C1.46874 2.37502 1.53124 2.34377 1.56249 2.31252L4.18749 0.750025C4.84374 0.375025 5.68749 0.562525 6.12499 1.18752L7.96874 3.93753C8.40624 4.59378 8.21874 5.46877 7.59374 5.90627L6.46874 6.68752C7.28124 8.00002 9.59374 11.2188 13.2812 13.5313L13.9687 12.5313C14.5 11.7813 15.3437 11.5625 16.0312 12.0313L18.7812 13.875C19.4062 14.3125 19.5937 15.1563 19.2187 15.8125L17.6562 18.4375C17.625 18.5 17.5937 18.5313 17.5625 18.5625C17 19.1563 16.1875 19.4688 15.1875 19.4688ZM2.37499 3.46878C1.78124 4.12503 1.81249 5.46877 2.49999 7.18752C3.28124 9.15627 4.78124 11.3125 6.74999 13.2813C8.68749 15.2188 10.875 16.7188 12.8125 17.5C14.5 18.1875 15.8437 18.2188 16.5312 17.625L18.0312 15.0625C18.0312 15.0313 18.0312 15.0313 18.0312 15L15.2812 13.1563C15.2812 13.1563 15.2187 13.1875 15.1562 13.2813L14.4687 14.2813C14.0312 14.9063 13.1875 15.0938 12.5625 14.6875C8.62499 12.25 6.18749 8.84377 5.31249 7.46877C4.90624 6.81252 5.06249 5.96878 5.68749 5.53128L6.81249 4.75002V4.71878L4.96874 1.96877C4.96874 1.93752 4.93749 1.93752 4.90624 1.96877L2.37499 3.46878Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M18.3125 8.90633C17.9375 8.90633 17.6562 8.62508 17.625 8.25008C17.375 5.09383 14.7812 2.56258 11.5937 2.34383C11.2187 2.31258 10.9062 2.00008 10.9375 1.59383C10.9687 1.21883 11.2812 0.906333 11.6875 0.937583C15.5625 1.18758 18.7187 4.25008 19.0312 8.12508C19.0625 8.50008 18.7812 8.84383 18.375 8.87508C18.375 8.90633 18.3437 8.90633 18.3125 8.90633Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M15.2187 9.18755C14.875 9.18755 14.5625 8.93755 14.5312 8.56255C14.3437 6.87505 13.0312 5.56255 11.3437 5.3438C10.9687 5.31255 10.6875 4.93755 10.7187 4.56255C10.75 4.18755 11.125 3.9063 11.5 3.93755C13.8437 4.2188 15.6562 6.0313 15.9375 8.37505C15.9687 8.75005 15.7187 9.0938 15.3125 9.1563C15.25 9.18755 15.2187 9.18755 15.2187 9.18755Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_941_16343">
+                            <rect width={20} height={20} fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                    01 7588141
+                  </p>
+                </li>
+                <li>
+                  <p className="inline-flex items-start mb-3 text-base leading-loose text-white/70">
+                    <span className="mr-3 mt-[10px]">
+                    <Smartphone />
+                    </span>
+                    (+51) 998239084
+                  </p>
+                </li>
+                <li>
+                  <p className="inline-flex items-start mb-3 text-base leading-loose text-white/70">
+                    <span className="mr-3 mt-[10px]">
+                      <svg
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 0.5625C5.6875 0.5625 2.1875 3.9375 2.1875 8.09375C2.1875 11.25 6.375 16.25 8.84375 18.9375C9.15625 19.2813 9.5625 19.4375 10 19.4375C10.4375 19.4375 10.8438 19.25 11.1562 18.9375C13.625 16.25 17.8125 11.25 17.8125 8.09375C17.8125 3.9375 14.3125 0.5625 10 0.5625ZM10.125 18C10.0625 18.0625 9.96875 18.0625 9.875 18C6.84375 14.6875 3.59375 10.375 3.59375 8.09375C3.59375 4.71875 6.46875 1.96875 10 1.96875C13.5312 1.96875 16.4062 4.71875 16.4062 8.09375C16.4062 10.375 13.1562 14.6875 10.125 18Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M10 4.90625C8.125 4.90625 6.59375 6.4375 6.59375 8.3125C6.59375 10.1875 8.125 11.75 10 11.75C11.875 11.75 13.4062 10.2188 13.4062 8.34375C13.4062 6.46875 11.875 4.90625 10 4.90625ZM10 10.3438C8.875 10.3438 8 9.4375 8 8.34375C8 7.25 8.90625 6.34375 10 6.34375C11.0937 6.34375 12 7.25 12 8.34375C12 9.4375 11.125 10.3438 10 10.3438Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    Av. Las Torres Sub Lt 7-C S/N Zona Norte de la Baja de Lima, Lurigancho – Huachipa
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 bg-[#080d3a] py-8">
+        <div className="container mx-auto">
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full px-4 md:w-1/3 lg:w-1/2">
+              <div className="flex justify-center my-1 md:justify-start">
+                <p className="text-base text-white">© Copyright 2025. Realizado por maxtsoft</p>
+              </div>
+            </div>
+            <div className="w-full px-4 md:w-2/3 lg:w-1/2">
+              <div className="my-1">
+                <div className="flex flex-wrap items-center justify-center -mx-3 md:justify-end">
+                  <a
+                    href="javascript:void(0)"
+                    className="px-3 text-base text-gray-7 text-white hover:text-secondary"
+                  >
+                   Inicio
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    className="px-3 text-base text-gray-7 text-white hover:text-secondary"
+                  >
+                    Nuestra empresa
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
