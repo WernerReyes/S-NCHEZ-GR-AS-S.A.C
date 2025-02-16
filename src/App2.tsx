@@ -1724,7 +1724,7 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-12 lg:pt-[120px] ">
+    <section className="relative z-20 overflow-hidden bg-slate-50 dark:bg-dark pt-20 pb-12 lg:pt-[120px] ">
       <div className="container mx-auto">
         <div className="text-center mb-10 max-w-[520px] mx-auto">
           <span className="block mb-2 text-lg font-semibold text-tertiary">
